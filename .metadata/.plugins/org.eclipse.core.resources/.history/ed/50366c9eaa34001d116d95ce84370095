@@ -1,0 +1,76 @@
+//Bogliano Milagros Vanesa, DIV J. Ejercicio 4-4.
+
+/*A. Hacer el menú de un programa en el MAIN con las siguientes opciones:
+1. Loguearse
+2. Comprar
+3. Ver mis compras
+4. Vender
+5. Salir
+B. Al menú anterior chequear que no pueda ingresar a ninguna opción si no se logueó.
+C. Ahora agregamos, chequear que no pueda ver sus compras, si no ingresó primero a
+comprar al menos una vez.
+D. Cuando se ingresa a la opción vender del menú, debe abrirse otro menú que contenga:
+1. Vender
+2. Hacer factura
+3. Volver atrás.
+E. A lo anterior sumarle que haya compras para poder vender. (Si compré una vez y vendí
+una vez no puedo ingresar a vender).
+F. Pasar las acciones de menú a funciones y llevarlas a una biblioteca*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	setbuf(stdout,NULL);
+
+	char respuesta;
+	int opcion;
+	int vericacionDeLogueo;
+
+	do{
+		do{
+			printf("INGRESE OPCION\n"
+					"1. Loguearse\n"
+					"2. Comprar\n"
+					"3. Ver mis compras\n"
+					"4.Vender\n"
+					"5.Salir\n");
+			scanf("%d",&opcion);
+
+			if(opcion != 1 && opcion != 2 && opcion != 3 && opcion != 4 && opcion != 5){
+				printf("\nERROR, INGRESE OPCION VALIDA\n");
+			}
+		}while(opcion != 1 && opcion != 2 && opcion != 3 && opcion != 4 && opcion != 5);
+
+
+		switch(opcion){
+				case 1:
+					vericacionDeLogueo=1;
+				break;
+
+				case 2:
+					if(vericacionDeLogueo!=1)
+					{
+						printf("ERROR ANTES DE COMPRAR DEBE LOGUEARSE\n");
+					}
+				break;
+
+				case 3:
+				break;
+
+				case 4:
+				break;
+
+				case 5:
+				break;
+
+			}
+
+			printf("Si desea seguir operando presione 's'\n");
+			fflush(stdin);
+			scanf("%c",&respuesta);
+
+	}while(respuesta=='s');
+
+	return EXIT_SUCCESS;
+}

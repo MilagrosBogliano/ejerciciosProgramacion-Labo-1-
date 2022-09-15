@@ -1,0 +1,12 @@
+00:54:10 **** Incremental Build of configuration Debug for project Ejercicio 4-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 4-2.o" "..\\src\\Ejercicio 4-2.c" 
+..\src\Ejercicio 4-2.c: In function 'main':
+..\src\Ejercicio 4-2.c:17:14: warning: implicit declaration of function 'pedirNumero' [-Wimplicit-function-declaration]
+  numeroUno = pedirNumero();
+              ^~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\IngresoDeNumero.o" "..\\src\\IngresoDeNumero.c" 
+gcc -o "Ejercicio 4-2.exe" "src\\Ejercicio 4-2.o" "src\\IngresoDeNumero.o" "src\\Suma.o" 
+
+00:54:11 Build Finished. 0 errors, 1 warnings. (took 770ms)
+

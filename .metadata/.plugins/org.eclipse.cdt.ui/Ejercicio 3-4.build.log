@@ -1,0 +1,11 @@
+00:25:35 **** Incremental Build of configuration Debug for project Ejercicio 3-4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 3-4.o" "..\\src\\Ejercicio 3-4.c" 
+..\src\Ejercicio 3-4.c: In function 'main':
+..\src\Ejercicio 3-4.c:17:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  scanf("%d" , &numero);
+          ^
+gcc -o "Ejercicio 3-4.exe" "src\\Ejercicio 3-4.o" 
+
+00:25:36 Build Finished. 0 errors, 1 warnings. (took 703ms)
+

@@ -1,0 +1,45 @@
+//Bogliano Milagros Vanesa, DIV J. Ejercicio 4-4.
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+	setbuf(stdout, NULL);
+
+	int opcion;
+	int opcionDos;
+	int bandera = 0;
+
+
+
+
+		printf("1- Loguearse"
+				"\n2- Comprar"
+				"\n3- Ver compras"
+				"\n4- Vender"
+				"\n5- Salir");
+		scanf("%d", &opcion);
+
+		if(opcion == 1){
+			printf("Usted Se logio");
+			bandera = 1;
+		}else if(opcion == 2){
+			printf("Usted no se logio");
+			bandera = 0;
+		}else if(opcion == 3){
+			printf("Esta viendo sus compras");
+			if(bandera == 0){
+				printf("No se logio");
+			}
+		}else if(opcion == 4){
+			printf("1- Vender"
+					"2- Hacer factura"
+					"3- Volver atrás.");
+			scanf("%d", &opcionDos);
+
+		}
+
+
+	return EXIT_SUCCESS;
+}
