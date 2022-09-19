@@ -1,4 +1,4 @@
-//Bogliano Milagros Vanesa, DIV J. Ejercicio 4-4 A
+//Bogliano Milagros Vanesa, DIV J. Ejercicio 4-4 B.
 
 
 #include <stdio.h>
@@ -8,11 +8,6 @@ int main(void){
 	setbuf(stdout, NULL);
 
 	int opcion;
-	//int opcionDos;
-	//int bandera = 0;
-
-
-
 
 		printf("1- Loguearse \n"
 				"2- Comprar \n"
@@ -22,11 +17,10 @@ int main(void){
 		scanf("%d", &opcion);
 
 		if(opcion != 1){
-			printf("Usted no se logio");
+			printf("Para poder comprar primero se debe logiar");
 		}
 
 
 	return EXIT_SUCCESS;
 }
-
 

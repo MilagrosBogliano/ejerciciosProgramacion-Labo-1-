@@ -1,10 +1,7 @@
-14:27:29 **** Rebuild of configuration Debug for project Ejercicio 4-3 ****
+16:52:04 **** Incremental Build of configuration Debug for project Ejercicio 4-3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ingresos.o" "..\\src\\Ingresos.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Validaciones.o" "..\\src\\Validaciones.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Conversiones.o" "..\\src\\Conversiones.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 4-3.o" "..\\src\\Ejercicio 4-3.c" 
 gcc -o "Ejercicio 4-3.exe" "src\\Conversiones.o" "src\\Ejercicio 4-3.o" "src\\Ingresos.o" "src\\Validaciones.o" 
 
-14:27:33 Build Finished. 0 errors, 0 warnings. (took 3s.948ms)
+16:52:06 Build Finished. 0 errors, 0 warnings. (took 2s.431ms)
 
